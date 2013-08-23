@@ -7,6 +7,7 @@ Npm.depends({
 });
 
 Package.on_use(function (api) {
+	api.use('sync-methods', 'server');
 	api.add_files('index.js', 'server');
 	api.add_files('balanced.js', 'client');
 });
