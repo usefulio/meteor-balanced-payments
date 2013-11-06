@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'nbalanced': 'https://github.com/ianserlin/nbalanced/tarball/05eb18cf3536e22b62f349d0520e5df23740dd5c'
+    'balanced': 'https://codeload.github.com/balanced/balanced-node/legacy.tar.gz/8910da7b59e1ed5a5bfa82a62b1104125b0056e4'
 });
 
 Package.on_use(function (api) {
@@ -12,5 +12,5 @@ Package.on_use(function (api) {
     api.add_files('index.js', 'server');
     api.add_files('balanced.js', 'client');
 
-    api.export('nbalanced', 'server');
+    api.export('balanced', 'server');
 });

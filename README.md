@@ -1,9 +1,9 @@
 Balanced Payments API
 =====================
 
-This package encapsulates a custom version of the `nbalanced` nodejs client for interacting with the Balanced Payments API from your server. See usage information here:
+This package encapsulates the official balanced nodejs client for interacting with the Balanced Payments API from your server. See usage information here:
 
-https://github.com/ianserlin/nbalanced
+https://github.com/balanced/balanced-node
 
 It also adds the balanced.js client to your client code.
 
@@ -12,7 +12,7 @@ How to install
 
 `mrt add balanced-payments`
 
-You will need Meteor _0.6+_ for this library to work.
+You will need Meteor _0.6.5+_ for this library to work.
 
 How to use
 ==========
@@ -24,10 +24,10 @@ I suggest using the `session-extras` package and taking advantage of `Session.wh
 balanced.init(':your_marketplace_uri');
 ```
 
-On the server, check out the https://github.com/ianserlin/nbalanced documentation, but basically `nbalanced` will become a globally available function that you initialize by doing:
+On the server, check out the https://github.com/balanced/balanced-node documentation, but basically `balanced` will become a globally available function that you initialize by doing:
 
 ```js
-balanced = new nbalanced({
+balanced = new balanced({
 	secret: BALANCED_API_SECRET
 	, marketplace_uri: MARKETPLACE_URI
 });
