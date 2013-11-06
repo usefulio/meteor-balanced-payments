@@ -1,5 +1,5 @@
 Package.describe({
-    summary: 'Balanced Payments (nbalanced packaged for meteor)'
+    summary: 'Balanced Payments (balanced packaged for meteor)'
 });
 
 Npm.depends({

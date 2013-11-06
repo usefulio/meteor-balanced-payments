@@ -3,7 +3,7 @@
   "description": "Balanced Payments API packaged for meteor",
   "homepage": "https://github.com/ianserlin/meteor-balanced-payments",
   "author": "Ian Serlin <ian@ianserlin.com>",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "git": "https://github.com/ianserlin/meteor-balanced-payments.git",
   "packages": {
     "sync-methods": "*"
