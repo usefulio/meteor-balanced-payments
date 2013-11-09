@@ -6,6 +6,6 @@
   "version": "0.2.2",
   "git": "https://github.com/ianserlin/meteor-balanced-payments.git",
   "packages": {
-    "sync-methods": "*"
+    "sync-methods": {}
   }
 }
