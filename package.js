@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'balanced': 'https://codeload.github.com/balanced/balanced-node/legacy.tar.gz/8910da7b59e1ed5a5bfa82a62b1104125b0056e4'
+   'balanced-official':'0.3.3'
 });
 
 Package.on_use(function (api) {

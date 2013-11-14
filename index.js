@@ -1,1 +1,1 @@
-balanced = Npm.require("balanced");
+balanced = Npm.require("balanced-official");

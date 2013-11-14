@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "balanced-official": {
+      "version": "0.3.3"
+    }
+  }
+}
