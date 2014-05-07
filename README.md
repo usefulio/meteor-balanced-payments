@@ -1,11 +1,11 @@
 Balanced Payments API
 =====================
 
-This package encapsulates the official balanced nodejs client for interacting with the Balanced Payments API from your server. See usage information here:
+This package encapsulates the official balanced nodejs client for interacting with the Balanced Payments API from your server and adds the balanced.js client to your client code.  This package now supports version 1.1 of the Balanced Payments API.
+
+See usage information here:
 
 https://github.com/balanced/balanced-node
-
-It also adds the balanced.js client to your client code.
 
 How to install
 ==============
@@ -17,20 +17,21 @@ You will need Meteor _0.6.5+_ for this library to work.
 How to use
 ==========
 
-When the balanced.js file has loaded, it will `Session.set('balancedLoaded', true)`.
-I suggest using the `session-extras` package and taking advantage of `Session.whenTrue` to handle this case, because when it is loaded you will need to initialize balanced.js on your client with your api key:
+Client side:
+
+When the balanced.js file has loaded, it will set a session variable with `Session.set('balancedLoaded', true)`.  You can use the optional `session-extras` package to detect when this file is fully loaded and the `balanced` object is available for use.
+
+Note that prior versions of balanced.js file required the client to initialize balanced.js with your marketplace api key before making any other calls.  This is no longer required.
+
+
+Server side:
+
+Refer to https://github.com/balanced/balanced-node for full documentation, but basically `balanced` will become a globally available object that you can use for all calls.  Note that this has changed significantly from the prior version and will require changes to your code.
 
 ```js
-balanced.init(':your_marketplace_uri');
-```
+balanced.configure('balanced-api-secret-key');
 
-On the server, check out the https://github.com/balanced/balanced-node documentation, but basically `balanced` will become a globally available function that you initialize by doing:
-
-```js
-balanced = new balanced({
-	secret: BALANCED_API_SECRET
-	, marketplace_uri: MARKETPLACE_URI
-});
+balanced.marketplace.cards.create({ ... });
 ```
 
 License
