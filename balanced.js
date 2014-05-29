@@ -16,7 +16,7 @@ Meteor.startup(function(){
 	//Generate a script tag
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://js.balancedpayments.com/v1/balanced.js';
+	script.src = 'https://js.balancedpayments.com/1.1/balanced.js';
 	script.onload = balancedLoadCallback;
 	script.onerror = balancedErrorCallback;
 

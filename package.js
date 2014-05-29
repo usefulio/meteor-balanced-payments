@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'balanced-official': '0.3.3'
+    'balanced-official': '1.1.0'
 });
 
 Package.on_use(function (api) {
