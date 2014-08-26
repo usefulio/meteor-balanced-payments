@@ -1,9 +1,9 @@
 Package.describe({
-    summary: 'Balanced Payments (balanced packaged for meteor)'
+    summary: 'Balanced Payments packaged for meteor'
 });
 
 Npm.depends({
-    'balanced-official': '1.1.0'
+    'balanced-official': '1.3.1'
 });
 
 Package.on_use(function (api) {
